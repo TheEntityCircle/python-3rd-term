@@ -12,6 +12,9 @@ simple_package_updated.bar.bar()
 #foo.foo()
 #bar.bar()
 
+# Третий подход
+#from simple_package_updated.bar import bar
+#bar()
 
 """
 Попробуйте поменять содержимое __init__.py и посмотреть, что на что влияет 

@@ -1,5 +1,5 @@
 def foo():
-    print("Foo is working")
+    print("Foo is working, context", __name__)
 
-print("Top level code is working")
+print("Top level code is working, context", __name__)
 foo()
