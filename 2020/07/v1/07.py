@@ -26,4 +26,9 @@ for i in range(m):
             else:
                 val = _val
         answer[prop] = val
-    print(", ".join([str(elem[0]) + " : " + str(elem[1]) for elem in sorted(answer.items(), key=lambda i: i[0]) if elem[1] is not None]))
+    for_out = [str(elem[0]) + " : " + str(elem[1]) for elem in sorted(answer.items(), key=lambda i: i[0]) if
+               elem[1] is not None]
+    if len(for_out) > 0:
+        print(", ".join(for_out))
+    else:
+        print("(none)")
